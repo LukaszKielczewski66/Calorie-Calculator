@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #E8E2D8;
+}
+
+/* *********
+*****NAV****
+************ */
+
+nav {
+    border-bottom: 4px solid #F5564E;
+    background-color: #303841;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+nav .navbar-brand,
+nav .fa-hamburger {
+    color: white;
+    font-size: 3.5rem;
+    padding: 10px 5px;
+    transition: .5s;
+}
+
+nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    nav .nav-item {
+        flex-direction: row;
+    }
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+nav .nav-link:hover,
+nav .navbar-brand:hover,
+nav .fa-hamburger:hover {
+    color: #F5564E;
+}
+
+/* ***********************
+******BACKGROUND*******
+*********************** */
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.background-container {
+    position: relative;
+    background-image: url('../img/cook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-bottom: 4px solid #F5564E;
+    z-index: 0;
+}
+
+/* ******************
+**SUMMARY CONTAINER**
+/* ***************** */
+
+.summary-container {
+    color: #ffff;
+    width: 100%;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.summary-chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary button {
+    font-size: 2rem;
+}
+
+.summary-info {
+    display: flex;
+    width: 100%;
+}
+
+.summary-item {
+    font-size: 1.3rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Fat-info {
+    color: #3366CC;
+}
+
+.Carbon-info {
+    color: #DC3912;
+}
+
+.Sugar-info {
+    color: #FF9900;
+}
+
+.Protein-info {
+    color: #109618;
+}
+
+
+/* ***************
+*****ACCORDION****
+******************/
+
+.accordion {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.accordion-button {
+    font-size: 2rem;
+    height: 4rem;
+    color: white !important;
+    font-weight: bold;
+    background-color: #303841 !important;
+    border-left: 12px solid #F5564E !important;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303841 !important;
+    border-left: 12px solid #F5564E;
+}
+
+/* ************************
+**********FORM*************
+*************************** */
+.accordion-body #my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+
+#my-form input {
+    width: 100%;
+    background-color: #303841;
+    color: white;
+    border: 0;
+    border-bottom: 2px solid #F5564E;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-container button {
+    border: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #EFBE5D;
+    color: #fff;
+    transition: .3s;
+}
+
+.button-container button:hover {
+    transform: scale(110%);
+}
+
+
+/* ************************************
+*********MEALS SUMMARY***********
+************************************ */
+.meal-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.meal-summary .btnReset {
+    padding: 2px 5px;
+    border: 0;
+    background-color: #EFBE5D;
+    color: #fff;
+}
+
+
+/* ************************************
+*********CHARTS CONTAINER***********
+************************************ */
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ************************************
+*********TIPS*****************
+************************************ */
+
+.tips {
+    background-color: #303841;
+    border-top: 3px solid #F5564E;
+    border-bottom: 3px solid #F5564E;
+}
+
+.heading {
+    font-size: 2.1rem;
+}
+
+.lose {
+    color: #DC3912;
+}
+
+.maintain {
+    color: #109618;
+}
+
+.gain {
+    color: #3366CC;
+}
+
+.tip1:hover {
+    background-color: #DC3912;
+}
+
+.tip2:hover {
+    background-color: #109618;
+}
+
+.tip3:hover {
+    background-color: #3366CC;
+}
+
+.tip1:hover .lose,
+.tip2:hover .maintain,
+.tip3:hover .gain {
+    color: #fff;
+}
+
+/* ************************************
+*********RECIPES*****************
+************************************ */
+
+.carousel {
+    border-top: 3px solid #F5564E;
+    border-bottom: 3px solid #F5564E;
+}
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.item-1 {
+    background-image: url('../img/salad.jpg');
+}
+
+.item-2 {
+    background-image: url('../img/pasta.jpg');
+}
+
+.item-3 {
+    background-image: url('../img/rice.jpg');
+}
+
+
+/* ************************************
+*********FOOTER*****************
+************************************ */
+
+footer {
+    background-color: #303841;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p {
+    opacity: .5;
+    font-size: 1.5rem;
+}
