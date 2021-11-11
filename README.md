@@ -1,6 +1,6 @@
 # Calorie-Calculator
 
-caloriecalculator.pl
+https://caloriecalculator.pl/
 
 My first project created in PHP, html, css, bootstrap, javascript, jquery, ajax, mysql.
 I created a calorie calculator, where you can add meals from the whole day and calculate the caloric demand.
