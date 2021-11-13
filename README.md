@@ -2,9 +2,12 @@
 
 https://caloriecalculator.pl/
 
-you don't need to enter your real e-mail address for registration
-or log in to an existing account
+you don't need to enter your real e-mail address for registration;
+
+or log in to an existing account:
+
 login: test
+
 password: test123
 
 My first project created in PHP, html, css, bootstrap, javascript, jquery, ajax, mysql.
